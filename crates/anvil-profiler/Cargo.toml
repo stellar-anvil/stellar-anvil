@@ -1,0 +1,15 @@
+[package]
+name = "anvil-profiler"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Gas and resource profiling for Soroban contracts — Stellar Anvil"
+
+[dependencies]
+anvil-core = { path = "../anvil-core" }
+soroban-sdk = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+colored = { workspace = true }
+tabled = { workspace = true }

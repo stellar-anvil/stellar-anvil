@@ -1,0 +1,16 @@
+[package]
+name = "anvil-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core sandbox environment for Stellar Anvil — time travel, ledger control, and chainable test setup"
+
+[dependencies]
+soroban-sdk = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+colored = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { version = "22.0.0", features = ["testutils"] }
