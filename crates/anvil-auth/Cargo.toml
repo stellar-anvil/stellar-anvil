@@ -1,0 +1,19 @@
+[package]
+name = "anvil-auth"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Wallet and auth mock module — Freighter/SEP-10 simulation for Stellar Anvil"
+repository.workspace = true
+authors.workspace = true
+keywords = ["soroban", "stellar", "auth", "sep10", "wallet"]
+categories = ["development-tools::testing", "authentication"]
+publish = false
+
+[dependencies]
+anvil-core = { path = "../anvil-core" }
+soroban-sdk = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+colored = { workspace = true }

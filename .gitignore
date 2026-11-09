@@ -1,0 +1,16 @@
+/target
+
+# Cargo.lock: committed for the CLI binary (reproducible installs),
+# excluded for library-only crates per Cargo convention.
+# The workspace Cargo.lock at the root covers the CLI.
+# Uncomment the next line only if you want to fully ignore it for a library-only workspace:
+# Cargo.lock
+
+# Anvil output files — these are generated artifacts, not source.
+# Named baseline files (e.g. baseline_profile.json) should be committed
+# explicitly if you want CI regression checks against them.
+*_candidate.json
+*_candidate.md
+regression_report.md
+snapshot.json
+*.json.bak

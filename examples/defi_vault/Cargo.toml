@@ -1,0 +1,19 @@
+[package]
+name = "defi-vault"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Full DeFi vault example — SEP-10, snapshot, CallSequence, and AuthPolicy"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = { version = "22.0.0" }
+
+[dev-dependencies]
+soroban-sdk    = { version = "22.0.0", features = ["testutils"] }
+anvil-core     = { path = "../../crates/anvil-core" }
+anvil-profiler = { path = "../../crates/anvil-profiler" }
+anvil-multi    = { path = "../../crates/anvil-multi" }
+anvil-auth     = { path = "../../crates/anvil-auth" }
